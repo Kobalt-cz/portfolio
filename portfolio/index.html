@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomáš Koval | IT Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8f9fa; }
+        .hero { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: white; padding: 80px 0; text-align: center; }
+        .skill-badge { font-size: 0.9rem; padding: 8px 15px; margin: 5px; background-color: #e9ecef; color: #333; border-radius: 20px; border: 1px solid #ccc; display: inline-block; }
+        .project-card { transition: transform 0.3s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .project-card:hover { transform: translateY(-5px); }
+        .gallery-img { width: 100%; height: 200px; object-fit: contain; background: white; border: 1px solid #ddd; border-radius: 5px; cursor: pointer; transition: 0.3s; }
+        .gallery-img:hover { opacity: 0.8; border-color: #2a5298; }
+        footer { background-color: #343a40; color: white; padding: 30px 0; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Tomáš Koval</h1>
+            <p class="lead">Student IT | Hardware nadšenec | Web Developer</p>
+        </div>
+    </header>
+
+    <section class="container py-5">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <h2>O mně</h2>
+                <p>Ahoj, jsem Tomáš, student informačních technologií. Mojí největší vášní je <strong>hardware a stavba počítačů</strong> – baví mě řešit kompatibilitu komponentů a diagnostiku. Kromě toho se věnuji tvorbě webových stránek a učím se moderní programovací jazyky.</p>
+                <p>Cílem tohoto portfolia je ukázat mé školní i osobní projekty, na kterých pracuji.</p>
+            </div>
+            <div class="col-md-6 mb-4">
+                <h2>Moje dovednosti</h2>
+                <div>
+                    <span class="skill-badge">⚙️ PC Hardware & Stavba</span>
+                    <span class="skill-badge">🔧 Diagnostika a Benchmarky</span>
+                    <span class="skill-badge">🌐 HTML5 & CSS3</span>
+                    <span class="skill-badge">🎨 Bootstrap 5</span>
+                    <span class="skill-badge">💻 C# (Základy)</span>
+                    <span class="skill-badge">🐍 Python (Základy)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Moje projekty</h2>
+            <div class="row g-4">
+                
+                <div class="col-md-6">
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Závěrečná technická zpráva: PC Benchmark</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Hardware / Architektura (AS)</h6>
+                            <p class="card-text">Kompletní diagnostika high-end herní sestavy (Ryzen 7 7800X3D, RTX 4070 Ti, 64GB RAM DDR5). Prováděl jsem zátěžové testy v Geekbench a Unigine Heaven, měření teplot a analýzu úzkých hrdel (bottleneck).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card project-card h-100 border-primary">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Web s využitím Bootstrap Gridu</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Webový vývoj / PRG</h6>
+                            <p class="card-text">Školní projekt demonstrující pokročilé rozložení prvků pomocí technologie Bootstrap Grid. Obsahuje asymetrické rozdělení, mřížky a responzivní chování.</p>
+                            <a href="bootstrap" class="btn btn-primary mt-3">Prohlédnout web</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <h2 class="text-center mb-4">Grafické práce a vektorový design</h2>
+        <p class="text-center text-muted mb-5">Kliknutím na obrázek jej zvětšíte (Lightbox galerie).</p>
+        
+        <div class="row g-4">
+            <div class="col-md-4 col-sm-6 text-center">
+                <a data-fslightbox="galerie" href="pepsi.svg">
+                    <img src="pepsi.svg" alt="Pepsi Logo SVG" class="gallery-img">
+                </a>
+                <p class="mt-2 fw-bold">Vektorové logo Pepsi</p>
+            </div>
+            
+            <div class="col-md-4 col-sm-6 text-center">
+                <a data-fslightbox="galerie" href="smarty.svg">
+                    <img src="smarty.svg" alt="Smarty Logo SVG" class="gallery-img">
+                </a>
+                <p class="mt-2 fw-bold">Vektorové logo Smarty</p>
+            </div>
+
+            <div class="col-md-4 col-sm-6 text-center">
+                <a data-fslightbox="galerie" href="https://via.placeholder.com/800x600?text=Tvůj+další+výtvor">
+                    <img src="https://via.placeholder.com/400x300?text=Tvůj+další+výtvor" alt="Placeholder" class="gallery-img">
+                </a>
+                <p class="mt-2 fw-bold">Další projekt...</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="kontakt">
+        <div class="container">
+            <h3>Kontaktujte mě</h3>
+            <p>Máte zájem o spolupráci nebo máte dotaz ohledně IT/Hardware?</p>
+            <div class="mt-4">
+                <p>📧 Email: <a href="mailto:tomas.koval@email.cz" class="text-info">tomas.koval@email.cz</a> <i>(uprav si e-mail)</i></p>
+                <p>🔗 GitHub: <a href="https://github.com/TVOJE_JMENO" class="text-info">github.com/TVOJE_JMENO</a> <i>(uprav si odkaz)</i></p>
+            </div>
+            <p class="mt-5 mb-0 text-muted small">&copy; 2026 Tomáš Koval. Vytvořeno pro účely školního portfolia.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.4.1/index.js"></script>
+
+</body>
+</html>
