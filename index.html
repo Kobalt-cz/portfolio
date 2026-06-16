@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tomáš Koval – Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=JetBrains+Mono:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Vlastní styly -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ══════════════
+     NAVIGACE
+     ══════════════ -->
+<nav>
+  <a href="#hero" class="nav-logo">TK<span style="color:var(--muted)">_dev</span></a>
+  <ul class="nav-links">
+    <li><a href="#o-mne">O mně</a></li>
+    <li><a href="#projekty">Projekty</a></li>
+    <li><a href="#grafika">Grafika</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+  </ul>
+</nav>
+
+<!-- ══════════════
+     HERO
+     ══════════════ -->
+<div class="hero" id="hero">
+  <p class="hero-eyebrow"><span></span>IT student · Praha</p>
+  <h1>Tomáš<br /><span class="highlight">Koval</span></h1>
+  <p class="hero-desc">
+    Student 3. ročníku oboru Informační technologie. Tvořím weby, programy
+    a grafiku — rád se učím novým věcem a dávám projekty dohromady od nuly.
+  </p>
+  <div class="hero-cta">
+    <a href="#projekty" class="btn btn-primary">Prohlédnout projekty</a>
+    <a href="#kontakt"  class="btn btn-outline">Kontakt</a>
+  </div>
+</div>
+
+<!-- ══════════════
+     O MNĚ
+     ══════════════ -->
+<section id="o-mne">
+  <p class="section-label">// o mně</p>
+  <h2 class="section-title">Kdo jsem</h2>
+  <div class="section-line"></div>
+
+  <div class="about-grid">
+
+    <div class="about-text">
+      <p>
+        Jmenuji se <strong style="color:var(--white)">Tomáš Koval</strong>
+        a studuji obor
+        <strong style="color:var(--white)">Informační technologie</strong>.
+        Zajímám se o webový vývoj, programování a grafický design.
+      </p>
+      <p>
+        Na škole pracuji s HTML/CSS, JavaScriptem, Pythonem a dalšími
+        technologiemi. Rád stavím projekty od návrhu po finální produkt.
+      </p>
+      <!-- Doplň: koníčky, cíle, co tě baví mimo školu -->
+
+      <div class="skills-list">
+        <span class="skill-tag">HTML / CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Bootstrap</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Git / GitHub</span>
+        
+        <!-- přidej další dovednosti -->
+      </div>
+    </div>
+
+    <div class="about-stats">
+      <div class="stat-card">
+        <div class="number">3.</div>
+        <div class="label">ročník IT</div>
+      </div>
+      <div class="stat-card">
+        <div class="number">10+</div>
+        <div class="label">školních projektů</div>
+      </div>
+      <div class="stat-card">
+        <div class="number">PRG</div>
+        <div class="label">Programování</div>
+      </div>
+      <div class="stat-card">
+        <div class="number">AS</div>
+        <div class="label">Aplikační software</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════
+     PROJEKTY
+     ══════════════ -->
+<section id="projekty">
+  <p class="section-label">// projekty</p>
+  <h2 class="section-title">Moje práce</h2>
+  <div class="section-line"></div>
+
+  <div class="projects-grid">
+
+    <!-- PROJEKT 1 — Bootstrap web (povinný) -->
+    <div class="project-card">
+      <!--
+        Až budeš mít screenshot, nahraď placeholder tímto:
+        <img
+          class="project-thumb"
+          src="img/bootstrap-thumb.png"
+          alt="Bootstrap web"
+          onclick="openLightbox(this)"
+          data-caption="Bootstrap web"
+        />
+      -->
+      <div height="200px" width="200px"></div>
+     
+        <img src="Screenshot 2026-06-17 000730.png" alt="diplom" data-caption="Popis díla – předmět" />
+      <div class="project-body">
+        <div class="project-subject">WEB · Bootstrap</div>
+        <div class="project-title">Bootstrap web</div>
+        <p class="project-desc">
+          Responzivní webová stránka vytvořená pomocí Bootstrap frameworku.
+          <!-- Doplň krátký popis, o čem web je -->
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS</span>
+          <span class="project-tag">Bootstrap</span>
+        </div>
+        <div class="project-links">
+          <a class="project-link" href="./bootstrap/index.html" target="_blank">🌐 Live web</a>
+          <a class="project-link" href="https://github.com/Kobalt-cz/portfolio/tree/main/bootstrap" target="_blank">&lt;/&gt; GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJEKT 2 — PRG -->
+    <div class="project-card">
+      <div class="project-thumb-placeholder">[ náhledový obrázek ]</div>
+      <div class="project-body">
+        <div class="project-subject">PRG · Programování</div>
+        <div class="project-title">Název projektu z PRG</div>
+        <p class="project-desc">
+          Krátký popis toho, co program dělá a jaké technologie používá.
+          <!-- Doplň vlastní popis -->
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <!-- nebo JavaScript, C#, Java... -->
+        </div>
+        <div class="project-links">
+          <a class="project-link" href="#" target="_blank">&lt;/&gt; GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJEKT 3 — AS -->
+    <div class="project-card">
+     <div height="200px" width="200px"></div>
+     
+        <img src="Pocet XP.png" alt="diplom" data-caption="Popis díla – předmět" />
+        
+      
+      <div class="project-body">
+        <div class="project-subject">AS · Aplikační software</div>
+        <div class="project-title">Haxagon Diplom</div>
+        <p class="project-desc">
+          nadherny rucne vyrobeny diplom.
+          <!-- Doplň vlastní popis -->
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Canva</span>
+          <span class="project-tag">Diplom</span>
+        </div>
+        <div class="project-links">
+          <a class="project-link" href="#" target="_blank">&lt;/&gt; GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Přidej další projekty podle vzoru výše -->
+
+  </div>
+</section>
+
+<!-- ══════════════
+     GRAFIKA / GALERIE
+     ══════════════ -->
+<section id="grafika">
+  <p class="section-label">// grafika &amp; design</p>
+  <h2 class="section-title">Grafické práce</h2>
+  <div class="section-line"></div>
+
+  <div class="gallery-grid" id="gallery">
+
+
+
+    <div class="gallery-item" onclick="openLightbox(this.querySelector('img'))">
+        <img src="attack.gif" alt="panacek z costructu" data-caption="panacek z costructu – předmět" />
+        <div class="overlay"><span class="overlay-icon"></span></div>
+      </div>
+
+    <div class="gallery-item" onclick="openLightbox(this.querySelector('img'))">
+        <img src="nemo.png" alt="Popis díla" data-caption="Popis díla – předmět" />
+        <div class="overlay"><span class="overlay-icon">🔍</span></div>
+      </div>
+
+    <div class="gallery-item" onclick="openLightbox(this.querySelector('img'))">
+        <img src="barevny barak.png" alt="Popis díla" data-caption="Popis díla – předmět" />
+        <div class="overlay"><span class="overlay-icon">🔍</span></div>
+      </div>
+
+    <div class="gallery-item" onclick="openLightbox(this.querySelector('img'))">
+        <img src="nvidie.png" alt="Popis díla" data-caption="Popis díla – předmět" />
+        <div class="overlay"><span class="overlay-icon">🔍</span></div>
+      </div>
+
+  </div>
+</section>
+
+<!-- ══════════════
+     KONTAKT
+     ══════════════ -->
+<section id="kontakt">
+  <p class="section-label">// kontakt</p>
+  <h2 class="section-title">Spojme se</h2>
+  <div class="section-line"></div>
+
+  <div class="contact-inner">
+    <p>
+      Hledáš vývojáře na praxi nebo brigádu? Nebo jen chceš říct ahoj?
+      Napiš mi — rád se ozvu.
+    </p>
+    <div class="contact-links">
+      <a class="contact-link" href="mailto:tomas.koval2000@gmail.com">✉️ tomas.koval2000@gmail.com</a>
+      <a class="contact-link" href="https://github.com/Kobalt-cz" target="_blank">🐙 GitHub</a>
+      <a class="contact-link" href="https://linkedin.com/in/TVOJE_JMENO"  target="_blank">💼 LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════
+     FOOTER
+     ══════════════ -->
+<footer>
+  <p>© 2025 Tomáš Koval &nbsp;·&nbsp; vytvořeno s ❤️ a hodně AI</p>
+</footer>
+
+<!-- ══════════════
+     LIGHTBOX
+     ══════════════ -->
+<div class="lightbox" id="lightbox" onclick="closeLightboxOnBg(event)">
+  <button class="lightbox-close" onclick="closeLightbox()" aria-label="Zavřít">✕</button>
+  <button class="lightbox-nav lightbox-prev" onclick="lightboxStep(-1)" aria-label="Předchozí">‹</button>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="" />
+  <button class="lightbox-nav lightbox-next" onclick="lightboxStep(1)"  aria-label="Další">›</button>
+  <span class="lightbox-caption" id="lightbox-caption"></span>
+</div>
+
+<!-- Vlastní scripty -->
+<script src="script.js"></script>
+
+</body>
+</html>
