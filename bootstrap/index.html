@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Grid Puzzle</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* Styly pouze pro vizualizaci, aby to vypadalo jako v zadání */
+        body { padding: 20px; background-color: #f8f9fa; }
+        .row { margin-bottom: 30px; }
+        
+        /* Barvičky pro sloupce, aby byly vidět */
+        .box {
+            padding: 20px;
+            color: white;
+            border-radius: 5px;
+            height: 100%; /* Aby měly sloupce stejnou výšku */
+        }
+        .bg-blue { background-color: #4285f4; }
+        .bg-red { background-color: #ea4335; }
+        .bg-green { background-color: #34a853; }
+        .bg-purple { background-color: #a042f4; }
+        .bg-orange { background-color: #fa7b17; }
+        
+        h3 { margin-top: 0; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="text-center mb-5">Bootstrap Grid Řešení</h1>
+
+        <h4 class="mb-3">1. Hlavní obsah a postranní panel (8 + 4)</h4>
+        <div class="row">
+            <div class="col-md-8 mb-2">
+                <div class="box bg-blue">
+                    <h3>Hlavní článek</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-2">
+                <div class="box bg-red">
+                    <h3>Boční panel</h3>
+                    <ul>
+                        <li>Archiv 2024</li>
+                        <li>Nejčtenější</li>
+                        <li>Reklama</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="mb-3">2. Služby a ceník (4 + 4 + 4)</h4>
+        <div class="row">
+            <div class="col-md-4 mb-2">
+                <div class="box bg-green">
+                    <h3>Webdesign</h3>
+                    <p>Tvorba moderních webových stránek na míru.</p>
+                    <hr>
+                    <strong>Cena: od 15 000 Kč</strong>
+                </div>
+            </div>
+            <div class="col-md-4 mb-2">
+                <div class="box bg-green">
+                    <h3>SEO Optimalizace</h3>
+                    <p>Zlepšení pozic ve vyhledávačích Google a Seznam.</p>
+                    <hr>
+                    <strong>Cena: 2 000 Kč / hod</strong>
+                </div>
+            </div>
+            <div class="col-md-4 mb-2">
+                <div class="box bg-green">
+                    <h3>Správa kampaní</h3>
+                    <p>PPC reklama a marketing na sociálních sítích.</p>
+                    <hr>
+                    <strong>Cena: od 5 000 Kč měsíčně</strong>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="mb-3">3. Patička stránky (3 + 3 + 3 + 3)</h4>
+        <div class="row">
+            <div class="col-6 col-md-3 mb-2">
+                <div class="box bg-purple">
+                    <h5>O nás</h5>
+                    <small>Jsme firma s dlouholetou tradicí v IT oboru.</small>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 mb-2">
+                <div class="box bg-purple">
+                    <h5>Odkazy</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-white">Domů</a></li>
+                        <li><a href="#" class="text-white">Služby</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 mb-2">
+                <div class="box bg-purple">
+                    <h5>Kontakt</h5>
+                    <small>Tel: +420 123 456 789<br>Email: info@firma.cz</small>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 mb-2">
+                <div class="box bg-purple">
+                    <h5>Sociální sítě</h5>
+                    <small>Facebook<br>Instagram<br>LinkedIn</small>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
